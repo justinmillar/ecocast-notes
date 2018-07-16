@@ -1,11 +1,15 @@
 # Ecological Forecasting - Day 1
 
 ## Introductions
+
 Presenter: Michael Dietze
+
 https://www.dropbox.com/s/g4bjhed4k5s48fv/NEFI_Welcome.pdf?dl=0
 
 ## Why Forecast?
+
 Presenter: Michael Dietze
+
 Lecture notes: https://www.dropbox.com/s/mwwusp4aqbecn20/EcoForecast2018_Lecture01.pdf?dl=0
 
 Decision are focused on what is going to happen in the future, and forecasting is explicitly about what will happen in the future. Forecasting also provides a framework for real-world application of ecological models. Iterative forecasting fits into the scientific method, and can improve and accelerate the scientific process.
@@ -62,7 +66,9 @@ Forecasts should be updated when new data become available. This lends ecoforeca
 Ecological forecasting is more than just running a model into the future, requires the fusion of models and data, must address multiple sources of uncertainty and variability, and requires probabilistic thinking.
 
 ## Decision structuring and indicators
+
 Presenter: Melissa Keeney
+
 Lecture notes: https://www.dropbox.com/s/e5evrxssz2s3q3y/DecisionStructuringAndIndicators.pdf?dl=0
 
 ### Book recommendations
@@ -100,4 +106,34 @@ Note that all of these (we came up with 17 in the room) go into a simple decisio
 | ~~Maximize comfort~~ | disturbance indicator, during flight experience| Rating: 1 to 5 (worst to best) | **4** | **4** | 1-5 (?)
 | ~~Minimize social cost~~ | | | | |
 | ~~Maximize ethics~~ | | | | |
+
 **best option** *worst option* ~~Non-informative objective~~
+
+This demonstrates that the values play a critical role in making an effective decisions.
+
+The relevant related questions include:
+- Is this the right problem / decision framing
+- If not, are there other objectives (and associated preformance measures) that need to be considered?
+- Can the alternatives be expanded?
+
+### Objectives: Why do we care about the decision?
+
+Means >>>>>>>>>>>>>>>>>>>>>>>>> End
+
+"Why is that important?" ---->
+
+<------ "How might we achieve?"
+
+Characteristics of a good objective include complete, concise, controllable, understandable, and preferentially independent
+
+### Performance measures / indicators
+
+Critically important for determining of translating models that is relevant for decisions. Establishing these values can be difficult, particularly when mapping categorical scales to quantitative values. It is important to consider the optimal representative values for each objective criteria, rather than dropping in model outputs with contexts.
+
+### Alternatives
+
+Centered on value-focused thinking.
+
+### Consequences
+
+This is primarily where ecological forecasting comes in, however each of the preceding parameters are important considerations when designing and improving the forecast. It is therefore important to think about who will be using the forecast, how will they value objectives, how will they weight alternatives. Not all forecasting applications necessarily have a decision component, but many will and this directly connects to adaptive management strategies. 
