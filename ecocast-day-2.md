@@ -148,4 +148,64 @@ Boosted regression trees
 
 ## State-Space models
 
-Lecture:   
+Presenter: Shannon LaDeau
+
+Lecture: https://www.dropbox.com/s/l3bys7j4jiq16mt/StateSpace.LaDeau-1.pdf?dl=0
+
+### Issues in prediction...
+
+Generally think of models as resolving signal versus noise in a dataset
+
+$$
+y \sim N(\beta X, s^2)
+$$
+
+We can uses confidence and predictive intervals to represent uncertainty, these should rink in regions were we have more data. Forcasting extends our model outside the range our data, which will increase the uncertainty. Multiple sources of this increased uncertainty make forecastin predictions difficult, and ecologists have not had a great track record at forecasting actual data.
+
+### State-Space models...
+
+Useful for when latent variable are connected in time or space. Also dynamic model, where the future state depends on the current state (if this is a linear process this is call a dynamic linear model).
+
+Also useful when specific to time, the Hidden Markov Modeling
+
+$$ X_{t-1} = X $$
+
+### Bayesian State-Space Modeling
+
+$$
+X_t = f(X_{t-1)} + \epsilon_t)
+\\ Y_y = g(X_t)
+$$
+
+### Generality of the State Space Modeling
+- Neither X nor Y need be Normal
+- X and Y don't need to be the same type of data, for same time scale
+- Handles missing data and multiple state sources
+
+### Random Walk State Space Model
+
+No predictor variables, used as a null model
+
+X's are dependent on each other, but the Y's are not. In other words Y's are conditionally independent
+
+### Dynamic Linear (State Space) Modeling
+
+$$
+X_t = X_{t-1} + \beta_0 + \beta_1 (temp) + \epsilon_t
+\\ Y_y = g(X_t)
+$$
+
+### Capture-Recapture
+
+Individuals captured, marked, and released with goal of estimating population size. Over repeated censuses will recapture some fraction of the population. Assume recapture is random and <100%.
+
+Suppose an individual record consists of capture data:
+```
+Yi = [1,0,1,0,0]
+```
+This is compatible with the following possible survival histories
+```
+Zi = [1,1,1,0,0]
+Zi = [1,1,1,1,0]
+Zi = [1,1,1,1,1]
+```
