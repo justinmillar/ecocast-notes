@@ -142,6 +142,8 @@ This is primarily where ecological forecasting comes in, however each of the pre
 
 Presenter: Shannon LaDeau
 
+Lecture: https://www.dropbox.com/s/ov2afxegh7unuft/Characterizing%20Uncertainty.pdf?dl=0
+
 ### Characterizing uncertainty
 
 Classic assumptions of linear models
