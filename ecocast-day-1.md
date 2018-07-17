@@ -113,7 +113,7 @@ This demonstrates that the values play a critical role in making an effective de
 
 The relevant related questions include:
 - Is this the right problem / decision framing
-- If not, are there other objectives (and associated preformance measures) that need to be considered?
+- If not, are there other objectives (and associated performance measures) that need to be considered?
 - Can the alternatives be expanded?
 
 ### Objectives: Why do we care about the decision?
@@ -139,3 +139,51 @@ Centered on value-focused thinking.
 This is primarily where ecological forecasting comes in, however each of the preceding parameters are important considerations when designing and improving the forecast. It is therefore important to think about who will be using the forecast, how will they value objectives, how will they weight alternatives. Not all forecasting applications necessarily have a decision component, but many will and this directly connects to adaptive management strategies.
 
 ## Introduction to Bayes
+
+Presenter: Shannon LaDeau
+
+### Characterizing uncertainty
+
+Classic assumptions of linear models
+- Homoskedasticity
+- No error in X variables
+- Error in the Y is measurement Error- Normally distributed Error
+- Observations are independent
+- No missing data
+
+
+$$y_i = \beta_0 + \beta(x_i) + \epsilon_i$$
+
+However, data do don't always fit these assumptions.
+
+$$
+y_i \sim Bern(\rho_i)
+\\\rho_i = logit (\theta_i)
+$$
+
+### Heteroskedasticty
+
+$$
+y \sim N(\beta_1 + \beta_2x, (\alpha_1 + \alpha_2x)^2)
+$$
+
+We can build that into the process model to more accurately capture the true relationship of the data distribution. Here this is done by allowing variance to increase through time.
+
+### Observation Error
+
+The regression error assumes all error is in Y, which would be fine if the process model is perfect. However, there is likely to be missing error in the covariates themselves. In other words, we didn't perfectly measure our predictor variables. Failing to account for this can make predictions over-confident.
+
+The solution is to have error incorporated into the covariates.
+
+$$
+y \sim N(x, s)
+\\x \sim N(0, \tau)
+$$
+
+### Latent variables
+
+### Missing data
+
+Can include in the process model, with hyper-priors in the parameter model. Update the regression model based on ALLL the rows of data conditioned on the current values of the missing data.
+
+**Assumption:** data missing at random. If it is systematic than missing data can not be modelled.
