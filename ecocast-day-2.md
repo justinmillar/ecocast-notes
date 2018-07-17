@@ -209,3 +209,28 @@ Zi = [1,1,1,0,0]
 Zi = [1,1,1,1,0]
 Zi = [1,1,1,1,1]
 ```
+## Expert Elicitation
+
+Presenter: Melissa Kenney & Mike Dietze
+
+### How do you construct a expert elicited probability distribution?
+##### Travel time from Boston University to Logan Airport
+
+To avoid anchoring, rather then thinking about initial values from the middle (i.e. mean) it is better to think of the extremes. To do this, we use the CDF (cumulative distribution function).
+
+What is the absolute mimiumum time to get to the airport: 1 min
+
+What is the absolute maximum: 10 Hours (everything goes wrong)
+
+What about the 99%tile: 2 hours
+
+95%ile:
+
+Take-home: estimate the central tendency last.
+
+## Projections:
+- split data (training vs validation)
+- calibration (state-space)
+- forecast
+- validation
+- analysis
