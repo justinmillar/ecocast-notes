@@ -136,4 +136,6 @@ Centered on value-focused thinking.
 
 ### Consequences
 
-This is primarily where ecological forecasting comes in, however each of the preceding parameters are important considerations when designing and improving the forecast. It is therefore important to think about who will be using the forecast, how will they value objectives, how will they weight alternatives. Not all forecasting applications necessarily have a decision component, but many will and this directly connects to adaptive management strategies. 
+This is primarily where ecological forecasting comes in, however each of the preceding parameters are important considerations when designing and improving the forecast. It is therefore important to think about who will be using the forecast, how will they value objectives, how will they weight alternatives. Not all forecasting applications necessarily have a decision component, but many will and this directly connects to adaptive management strategies.
+
+## Introduction to Bayes
