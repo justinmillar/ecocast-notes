@@ -108,3 +108,73 @@ for(k in 1:M)
 - Simulate pseudo-observations
 - Assimilate pseudo-observations
 - assess impact on estimates
+
+## Anal Data Assimilation
+
+Presenter: Michael Dietze
+
+Lecture: https://www.dropbox.com/s/mj51o9gbakd2bv2/EF_Lesson09_DA1.2018_Summer.pdf?dl=0
+
+#### The Forecast-Analysis cycle
+![](img/fa-cycle.PNG)
+
+### The Analysis Problem
+*Prior* to observing how the future plays out, what is the best estimate of the future state of the system $X_{t+1}$? Our forecast $P(X_{t+1})$.
+
+Once we make observations of the system $Y_t$ what our best estimate of $X_t$?
+
+The data is imperfect, noise, and maybe shouldn't be trusted completely. It is likely better to combine that data with more into (i.e. our model).
+
+$P(X_{t+1}|Y_{t+1}) \propto P(Y_{t+1}|X_{t+1})P(X_{t+1})$
+
+##### BAYES!!
+
+### Simplest Example
+
+- Assume forecast $P(X_{t+1}) \sim N(\mu, \tau^2)$
+- Assume $P(Y_{t+1}|X_{t+1}) \sim N(X_{t+1}, \sigma^2)$
+  - Likelihood = Data Modeling
+- Assume $Y, \mu, \tau^2, \sigma^2$ are known
+
+This reduces to a weighted average of the likelihood and the prior, weighted by their precisions.
+
+### Simplest Forecast
+
+Only considering Process and initial conditions error
+
+Uses normal conjugacy and linearitry to derive anayltically derive the paramters (mean and variance)
+
+Call the Kalman Filter
+
+### Generalize to Multivariate
+
+Basically, hit it with linear algebra.
+
+### Pro/Con of the Kalman Filter (KF)
+
+Pros:
+- Analytically tractable
+- depends only upon the previous state, the current forecast, and the current dataset
+
+Cons (mostly):
+- Linear
+- Normal
+- Matrix inversion
+- Assumes all parameters are **known**
+- Forward only
+
+Historically, the linearity assumptions were the biggest constrait. However, we can use the Taylor approximation to handle nonlinear models
+
+### Extended Kalman Filter
+
+Used to address the linear assumption of the Forecast
+
+$\mu_f = f(\mu_a)$
+
+Update variance using a Taylor Series expansion
+
+F = Jacobian($df_i/dx_j$)
+
+$P_f \approx Q + FP_aF^T$
+
+Jensen's Inequality means that this is biased and that the normality assumption is violated.
