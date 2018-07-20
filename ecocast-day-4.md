@@ -44,3 +44,9 @@ Happens when you become false over-confident in the model, which causes the unce
 #### What if we forecast with a large Monte Carlo Sample
 
 ### The Particle Filter
+
+## Model assessment
+
+### Bayesian p-values
+
+analogous to plotting out residual for a frequentist model
